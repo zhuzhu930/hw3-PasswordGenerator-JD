@@ -55,6 +55,7 @@ header {
 }
 
 .card-footer {
+  grid-column: 1 / -1;
   text-align: center;
 }
 
@@ -97,7 +98,7 @@ button[disabled] {
   float: right;
 }
 
-#password {
+.password-display {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -118,6 +119,23 @@ button[disabled] {
   overflow: hidden;
 }
 
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.number-input {
+  width: 3rem;
+}
+
+.form label {
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 5px;
+}
+
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
@@ -125,7 +143,7 @@ button[disabled] {
     padding: 10px 15px;
   }
 
-  #password {
+  .password-display {
     font-size: 1rem;
   }
 }
