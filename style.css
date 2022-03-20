@@ -53,7 +53,7 @@ header {
 .card-body {
   min-height: 100px;
 }
-
+/* modified the button style since now it's a grid item.  */
 .card-footer {
   grid-column: 1 / -1;
   text-align: center;
@@ -118,7 +118,7 @@ button[disabled] {
   resize: none;
   overflow: hidden;
 }
-
+/* adding the desgin for the form I added in HTML. */
 .form {
   display: grid;
   grid-template-columns: 1fr 1fr;

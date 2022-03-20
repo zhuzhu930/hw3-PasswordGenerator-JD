@@ -24,6 +24,7 @@
             placeholder="Your Secure Password"
             aria-label="Generated Password">Your Secure Password
           </textarea>
+          <!-- Adding a form to capture data.  -->
           <form id="passwordGeneratorForm" class="form">
             <label for="characterAmountNumber">Number of Characters</label>
             <input class="number-input" type="number" min="8" max="128" value="10" id="characterAmountNumber">
@@ -36,11 +37,11 @@
 
             <label for="includeSymbols">Include Symbols</label>
             <input type="checkbox" id="includeSymbols">
-
+            <!-- Button location is modified to accomodate the submit feature in the form.  -->
             <div class="card-footer">
               <button type="submit" id="generate" class="btn">Generate Password</button>
             </div>
-            </form>
+          </form>
         </div> 
       </div>
     </div>
